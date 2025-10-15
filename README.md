@@ -1,5 +1,5 @@
 📝 My Todo App/Task-Manager
-A full-featured, responsive, and offline-capable Todo App built with React, React Query, and Tailwind CSS. It includes advanced features like pagination, search/filtering, CRUD operations, error boundaries, and offline fallback.
+A full-featured, responsive, and offline-capable Todo App built with React, typescript, React Query, and Tailwind CSS. It includes advanced features like pagination, search/filtering, CRUD operations, error boundaries, and offline fallback.
 
 🚀 Live Demo
 🔗 View deployed app
