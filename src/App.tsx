@@ -66,12 +66,13 @@ function App() {
     }
   };
 
-  const availableCategories = useMemo(() => {
-    const categories = todos
-      .map((t) => t.category)
-      .filter((c) => c && c.trim() !== "");
-    return Array.from(new Set(categories)).sort();
-  }, [todos]);
+    const availableCategories = useMemo(() => {
+      const categories = todos
+        .map((t) => t.category)
+        .filter((c): c is string => Boolean(c && c.trim() !== ""));
+      return Array.from(new Set(categories)).sort();
+    }, [todos]);
+
 
   const filteredAndSortedTodos = useMemo(() => {
     let filtered = todos;
