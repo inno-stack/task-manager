@@ -8,6 +8,8 @@ import { FilterBar } from "./components/FilterBar";
 import { useAuthStore } from "./store/authStore"; //
 
 // console.log("SUPABASE URL:", import.meta.env.VITE_SUPABASE_URL);
+console.log("Supabase URL (online):", import.meta.env.VITE_SUPABASE_URL);
+console.log("Supabase KEY (online):", import.meta.env.VITE_SUPABASE_ANON_KEY);
 
 function TodoApp() {
   const { user, signOut } = useAuthStore(); //
